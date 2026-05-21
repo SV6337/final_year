@@ -1,0 +1,14 @@
+name: hyperspec
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - tensorflow=1.15
+  - pip
+  - pip:
+    - tflearn
+    - flask
+    - opencv-python
+    - numpy
+    - matplotlib
+    - tqdm

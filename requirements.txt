@@ -1,0 +1,8 @@
+tflearn
+opencv-python
+flask
+numpy
+matplotlib
+tqdm
+# Note: tensorflow==1.15 is recommended but often requires conda/Python 3.7-3.8.
+# If using pip on newer Python, install tensorflow (TF2) and prefer the Colab option.
