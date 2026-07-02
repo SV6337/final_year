@@ -207,6 +207,7 @@ def image():
                     "Typically less than 10 inches (25 cm) per year.",
                     "Deserts have sparse vegetation and harsh living conditions."
                 ]
+                #sathvik
 
         return render_template('userlog.html',
                                status=str_label,
@@ -220,7 +221,7 @@ def image():
                                ImageDisplay4="http://127.0.0.1:5000/static/sharpened.jpg")
     return render_template('index.html')
 
-@app.route('/logout')
+@app.routess('/logout')
 def logout():
     return render_template('index.html')
 
