@@ -4,7 +4,7 @@ Quick guide to run and demo this project (final-year project): a Flask web app t
 using a pretrained tflearn/TensorFlow model for hyperspectral image classification.
 ef
 Contents
-- `app.py` — Flask app (UI + inference flow)
+- `app.py` — Flask app (UI + inference flow)MY NAME
 - `training.py` — training script that builds the model and saves a TF1.x checkpoint
 - `TRAIN/`, `TEST/` — folders for training/testing images (filenames encode labels: F/W/C/R/D)
 - `hyperspectral-0.001-2conv-basic.model.*` — TF checkpoint files (.meta, .index, .data)
