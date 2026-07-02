@@ -2,7 +2,7 @@
 
 Quick guide to run and demo this project (final-year project): a Flask web app that performs inference
 using a pretrained tflearn/TensorFlow model for hyperspectral image classification.
-ef
+effdf
 Contents
 - `app.py` — Flask app (UI + inference flow)
 - `training.py` — training script that builds the model and saves a TF1.x checkpoint
