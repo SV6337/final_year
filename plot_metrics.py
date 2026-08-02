@@ -16,13 +16,13 @@ for root, dirs, files in os.walk(log_dir):
             break
 
 if not log_file:
-    raise FileNotFoundError("TensorBoard event file not found!")
+    raise FileNotFoundError("TensorBoard event not found!")
 
 # Load event data
 event_acc = EventAccumulator(log_file)
 event_acc.Reload()
 
-# Extract accuracy and loss data
+# Extract accuracy and loss data findings
 accuracy_events = event_acc.Scalars("accuracy")
 loss_events = event_acc.Scalars("loss")
 
@@ -35,7 +35,7 @@ plt.figure(figsize=(8, 5))
 plt.plot(df_acc["Epoch"], df_acc["Accuracy"], marker='o')
 plt.title("Accuracy vs Epochs")
 plt.xlabel("Epoch")
-plt.ylabel("Accuracy")
+plt.ylabel("Acc")
 plt.grid(True)
 plt.savefig("accuracy_vs_epochs.png")
 plt.show()
@@ -45,7 +45,7 @@ plt.figure(figsize=(8, 5))
 plt.plot(df_loss["Epoch"], df_loss["Loss"], marker='o', color='red')
 plt.title("Loss vs Epochs")
 plt.xlabel("Epoch")
-plt.ylabel("Loss")
+plt.ylabel("Los")
 plt.grid(True)
 plt.savefig("loss_vs_epochs.png")
 plt.show()
