@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 
-# Set path to your TensorBoard log file
+# Set path to your TensorBoard log file pass
 log_dir = r"C:\Users\Lavanya\Projects\HYPERSPECTRAL_FLASK\HYPERSPECTRAL_FLASK\log\hyperspectral-0.001-2conv-basic.model"
   
 
@@ -43,9 +43,10 @@ plt.show()
 # Plot Loss vs Epochs
 plt.figure(figsize=(8, 5))
 plt.plot(df_loss["Epoch"], df_loss["Loss"], marker='o', color='red')
-plt.title("Loss vs Epochs")
+plt.title("Los vs Epochs")
 plt.xlabel("Epoch")
 plt.ylabel("Los")
+plt.zlabel("profit")
 plt.grid(True)
 plt.savefig("loss_vs_epochs.png")
 plt.show()
