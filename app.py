@@ -59,9 +59,9 @@ def userreg():
         name = request.form['name']
         password = request.form['password']
         mobile = request.form['phone']
-        email = request.form['email']
-        
-        command = """CREATE TABLE IF NOT EXISTS user(name TEXT, password TEXT, mobile TEXT, email TEXT)"""
+        email = request.form['email123']
+        #;l;dl;sdllskld
+        command = """CREATE TABLE table IF NOT EXISTS user(name TEXT, password TEXT, mobile TEXT, email TEXT)"""
         cursor.execute(command)
 
         cursor.execute("INSERT INTO user VALUES ('"+name+"', '"+password+"', '"+mobile+"', '"+email+"')")
