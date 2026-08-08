@@ -7,7 +7,7 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
 import tensorflow as tf
-#lishanthghgxhgxhgsxhghxgshx
+#lishanthghgxhgxhgsxhghxgshxdfdfdf
 import matplotlib
 matplotlib.use('Agg')  # <-- This line avoids Tkinter GUI errors in web apps
 import matplotlib.pyplot as plt
@@ -192,7 +192,7 @@ def image():
             elif np.argmax(model_out) == 3:
                 str_label = "residential area"
                 accuracy = "The predicted image of the hyperspectral image is residential area with an accuracy of {}%".format(model_out[3] * 100)
-                pre = "The information about this analysis are:\n\n"
+                pre = "The inggformation about this analysis are:\n\n"
                 pre1 = [
                     "A residential area is designated for housing and living purposes.",
                     "Includes homes, apartments, parks, schools, and public services.",
